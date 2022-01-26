@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon" />
+
+    <title>Anand Prakash</title>
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div
+        class="container-fluid collapse navbar-collapse justify-content-center"
+      >
+        <span class="navbar-brand mb-0 h1">APK [Payment Saving Tool]</span>
+      </div>
+    </nav>
+    <!-- Navbar Ends -->
+    {% if messages %} {% for message in messages %}
+    <div class="alert alert-success" role="alert">{{message}}</div>
+    {% endfor %} {% endif %}
+
+    <!-- Main Div Starts -->
+    {% block main %}{% endblock main %}
+    <!-- Main Div Ends -->
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+    ></script>
+  </body>
+</html>
