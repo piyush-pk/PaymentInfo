@@ -1,1 +1,1 @@
-web: gunicorn ThakuriyaTelecom.wsgi --log-file
+web: gunicorn ThakuriyaTelecom.wsgi --log-file -
